@@ -8,28 +8,25 @@
 ***
 ## 实验问题与解答
 ### 1、如何配置无人值守安装iso并在Virtualbox中完成自动化安装？
-&emsp;
-* 传输宿主机上下载好的ubuntu的iso镜像至虚拟机用户目录(具体方法见第三部分“使用sftp在虚拟机和宿主机之间传输文件”)
 
-&emsp;
+* 传输宿主机上下载好的ubuntu的iso镜像至虚拟机用户目录(具体方法见实验问题与解答3)
+
+
 * 使用mount语句，挂载iso镜像文件到新建的专用目录loopdir
 
 
 * 使用rsync -av loopdir/ cd语句，克隆光盘内容到新建的工作目录cd
 
-&emsp;
+
 * 使用umount语句卸载iso镜像后，进入工作目录cd,**置顶**添加自动安装菜单选项
 ![修改isolinux/txt.cfg文件](img/修改isolinux.txtcfg.PNG)
-
 &emsp;
-* 修改后输入以下语句进行**强制保存**退出
-&emsp;
-![用：wq!语句强制保存退出](img/强制保存退出.PNG)
 
-&emsp;
-* 将用官方提供的示例编辑制定好的.seed文件保存至~/cd/preseed文件夹下(具体方法见第三部分)
+* 修改后输入:wq!语句实现**强制保存**退出
 
-&emsp;  
+* 将用官方提供的示例编辑制定好的.seed文件保存至~/cd/preseed文件夹下(具体方法见实验问题与解答3)
+
+
 * 进入isolinux/isolinux.cfg文件，修改timeout 300 为 timeout 10
 ![修改isolinux.cfg文件](img/修改isolinux.cfg文件.PNG)
 
@@ -39,7 +36,7 @@
 ![定制好的镜像](img/定制好的镜像.PNG)
 
 &emsp;
-* 将custom.iso传输至主机(具体方法见第三部分)，并在虚拟机中挂载，OK
+* 将custom.iso传输至主机，并在虚拟机中挂载，OK
 ![挂载custom.iso至虚拟机](img/挂载custom.iso至虚拟机.PNG)
 
 &emsp;
@@ -59,7 +56,6 @@
 &emsp;
 ### 2、Virtualbox安装完Ubuntu之后新添加的网卡实现系统如何实现开机自动启用和自动获取IP？
 
-&emsp;
 * 在虚拟机设置界面添加第二块网卡，类型为host-only
 ![在虚拟机设置界面添加第二块网卡](img/添加第二块网卡.PNG)
 
@@ -78,7 +74,6 @@
 &emsp;
 ### 3、如何使用sftp在虚拟机和宿主机之间传输文件？
 
-&emsp;
 #### 本次实验采用的方法
 
 
