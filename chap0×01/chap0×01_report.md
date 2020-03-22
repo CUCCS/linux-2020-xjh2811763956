@@ -109,7 +109,8 @@
 &emsp;
 
 * **问题2** ：用mkisofs语句进行定制镜像制作时，找不到该命令
-* **解决方案**：根据提示安装genisoimage&emsp;
+* **解决方案**：根据提示安装genisoimage
+&emsp;
 ![报错找不到genisoimage及安装](img/下载genisoimage.PNG)
 &emsp;
 
