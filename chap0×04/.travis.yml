@@ -61,6 +61,9 @@ script:
          - bash tasks/5-3.sh -u /images/USA-logosmall.gif
 after_script:
         - /usr/bin/shellcheck test.sh
+        - /usr/bin/shellcheck tasks/5-1.sh
+        - /usr/bin/shellcheck tasks/5-2.sh
+        - /usr/bin/shellcheck tasks/5-3.sh
 
 after_failure:
         - id
