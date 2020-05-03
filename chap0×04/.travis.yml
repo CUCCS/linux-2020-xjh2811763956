@@ -14,7 +14,8 @@ before_install:
         - sudo apt install ghostscript
         #下载任务2-2需要使用的文件
         - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
-        - sudo apt install p7zip-full- 7z x web_log.tsv.7z
+        - sudo apt install p7zip-full
+        - 7z x web_log.tsv.7z
 script:
 
          #任务一:用bash编写一个图片批处理脚本
