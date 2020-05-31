@@ -262,7 +262,7 @@ FTP、NFS、DHCP、DNS、Samba服务器的自动安装与自动配置
       * 解决：修改 `/etc/netplan/01-netcfg.yaml` ，在网卡的 dhcp 配置列表里添加配置参数：`dhcp-identifier: mac`
       * [参考资料](https://c4pr1c3.github.io/LinuxSysAdmin/cloud-init.md.html#/-ip-)
   
-    * 设置root免密登录时报错`root@192.168.56.103: Permission denied (publickey)`
+   * 设置root免密登录时报错`root@192.168.56.103: Permission denied (publickey)`
        * 解决：生成公私钥对、免密登录时都切换到root用户身份 
    * NFS挂载出错：`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
      * 原因：缺少相应的包
