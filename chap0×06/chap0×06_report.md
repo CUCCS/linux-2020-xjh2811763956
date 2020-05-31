@@ -200,7 +200,7 @@ FTP、NFS、DHCP、DNS、Samba服务器的自动安装与自动配置
       * 下载整个目录
 
 6. DNS
-基于上述Internal网络模式连接的虚拟机实验环境，在DHCP服务器上配置DNS服务，使得另一台作为DNS客户端的主机可以通过该DNS服务器进行DNS查询
+    * 基于上述Internal网络模式连接的虚拟机实验环境，在DHCP服务器上配置DNS服务，使得另一台作为DNS客户端的主机可以通过该DNS服务器进行DNS查询
 在DNS服务器上添加 zone "cuc.edu.cn" 的以下解析记录
    * server
         * 安装Bind
@@ -254,7 +254,6 @@ FTP、NFS、DHCP、DNS、Samba服务器的自动安装与自动配置
         
         * `sudo resolvconf -u`
     ![DNS配置成功](./img/DNS配置成功.PNG)
-    ![](./img/)
             
 
 ## 问题及解决
